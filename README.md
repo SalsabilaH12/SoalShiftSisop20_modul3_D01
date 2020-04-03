@@ -1,27 +1,36 @@
 # SoalShiftSisop20_modul3_D01
 1. Membuat sebuah game berbasis text terminal mirip dengan Pokemon GO.
-  Ketentuan permainan sebagai berikut:
-  a. Menggunakan IPC-shared memory, thread, fork-exec.
-  b. Kalian bebas berkreasi dengan game ini asal tidak konflik dengan
-     requirements yang ada. (Contoh: memberi nama trainer, memberi notifikasi
-     kalau barang di shop sudah penuh, dan lain-lain).
-  c. Terdapat 2 code yaitu soal2_traizone.c dan soal2_pokezone.c.
-  d. soal2_traizone.c mengandung fitur:
-     i. Normal Mode (3 Menu)
-        1. Cari Pokemon
-        2. Pokedex
-        3. Shop
-    ii. Capture Mode (3 Menu)
-        1. Tangkap
-        2. Item 
-        3. Keluar
-  e. soal2_pokezone.c mengandung fitur:
-     i. Shutdown game
-    ii. Jual Item (Gunakan Thread)
-   iii. Menyediakan Random Pokemon (Gunakan Thread)
-        1. Setiap tipe pokemon memiliki peluang 1/8000 untuk jadi shiny pokemon.
-        2. Shiny Pokemon meningkatkan escape rate sebesar +5%
-        3. Setiap 1 detik thread ini akan mengkalkulasi random ulang lagi untuk nantinya diberikan ke soal2_traizone.
+
+a. Menggunakan IPC-shared memory, thread, fork-exec.
+
+b. Kalian bebas berkreasi dengan game ini asal tidak konflik dengan
+   requirements yang ada. (Contoh: memberi nama trainer, memberi notifikasi
+   kalau barang di shop sudah penuh, dan lain-lain).
+   
+c. Terdapat 2 code yaitu soal2_traizone.c dan soal2_pokezone.c.
+
+d. soal2_traizone.c mengandung fitur:
+ 
+  i. Normal Mode (3 Menu)
+  1. Cari Pokemon
+  2. Pokedex
+  3. Shop
+  
+ ii. Capture Mode (3 Menu)
+  1. Tangkap
+  2. Item 
+  3. Keluar
+  
+e. soal2_pokezone.c mengandung fitur:
+
+  i. Shutdown game
+  
+ ii. Jual Item (Gunakan Thread)
+ 
+iii. Menyediakan Random Pokemon (Gunakan Thread)
+  1. Setiap tipe pokemon memiliki peluang 1/8000 untuk jadi shiny pokemon.
+  2. Shiny Pokemon meningkatkan escape rate sebesar +5%
+  3. Setiap 1 detik thread ini akan mengkalkulasi random ulang lagi untuk nantinya diberikan ke soal2_traizone.
         
   Source code :
   ```
